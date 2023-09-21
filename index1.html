@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 : web design & user experience</title>
+    <link rel="stylesheet" href="./style1.css"/>
+    <link rel="icon" type="image/x-icon" href="./ticket-photo.png"/>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><img src="./header-logo.png" alt="header-logo"></li>
+            <li id="Home"><a href="./index.html"> Home</a></li>
+            <li id="About"><a href="./about.html"> About</a></li>
+            <li id="contact"><a href="./contact1.html">Contact us</a></li>
+        </ul>
+    </header>
+    
+
+    <h2>Seats Availability</h2> <!--table-->
+    <table border="5">
+        <tr>
+        <th> Gate Name </th>
+        <th> Available Seats</th>
+
+        <th>Fees</th>
+        </tr>
+        <tr>
+        <td>A </td> <td> 3000</td><td>15$</td>
+        </tr>
+        <tr>
+        <td>B</td> <td> 4000 </td><td> 15$</td>
+        </tr>
+        <tr>
+        <td>C</td> <td> 1500</td><td>25$</td>
+        </tr>
+        <tr>
+        <td>D </td> <td> 5000</td><td>10$</td>
+        </tr>
+        <tr>
+        <td>E</td> <td> 2500 </td><td>30$</td>
+        </tr>
+        </table>
+
+    <div class="main"> <!-- Form-->
+        <div class="register">
+            <h2>Register here For Tickets</h2>
+
+            <form id="register" method="post" action="./ticket-submit-redirect.html">
+            <label>Name: </label> <!-- Name label-->
+            <br>
+            <input type="text" name="fname" id="name" placeholder="Enter your name">
+            <br><br>
+
+            <label>Email: </label> <!-- Email label-->
+            <br>
+            <input type="text" name="email" id="email" placeholder="Enter your Email here">
+            <br><br>
+
+            <label class="container"> 
+                <input type="checkbox" checked="checked">E-ticket via email
+                <span class="checkmark"></span>
+            <br><br>
+
+            <input type="submit" value="submit" name="submit" id="submit"> <!-- submit button-->
+
+            </form>
+        
+        </div> <!-- registrartion class ending-->
+    </div><!-- main class ending-->
+    
+    
+    <h2> <!--video highlights-->
+         Red Sox Game vs Yankees - Highlights
+        <br>
+        <video width="500px" height="250px" controls="controls">
+            <source src="./highlights.mp4" type="video/mp4" />
+           </video>
+           
+    
+     
+    <h2>Directions To Fenway Park (Please play the audio)</h2> <!--audio file-->
+    <audio controls id="audio">
+        <source src="./Fenway directions.mp3" type="audio/ogg">
+      </audio>
+      <br><br><br>
+
+    <footer id="footer" class="sticky-footer"> <!--footer-->
+        <p>Disclamer: 2023 &copy; Reserved to Ram. This website is created for INFO 6150 web design & user experience assignment purpose only. </p>
+    </footer>
+</body>
+</html>

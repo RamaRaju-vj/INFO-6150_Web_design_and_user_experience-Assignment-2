@@ -1,0 +1,16 @@
+h1{
+    background-color: #FFCC70;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    padding-top: 1px;
+    border-radius: 20px ;
+}
+
+body{
+    background-image: url(./ticket-photo.png);
+    background-size: 1150px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
